@@ -13,6 +13,13 @@
 解压到一个目录，比如：D:\tools\allure-2.21.0
 将 allure-2.21.0\bin 添加到系统环境变量 PATH 中
 验证是否成功:
-```
+``` bash
 allure --version
 ```
+
+## 查看结果
+``` bash
+allure open .\reports\UIReport
+```
+
+
