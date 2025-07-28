@@ -1,4 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","1677","搜索allure","testcase","Mon Jul 28 11:04:21 CST 2025","passed","Mon Jul 28 11:04:22 CST 2025","","test_base","",""
-"","4711","搜索playwright","testcase","Mon Jul 28 11:04:22 CST 2025","passed","Mon Jul 28 11:04:27 CST 2025","","test_purchase","",""
-"","1615","搜索pytest","testcase","Mon Jul 28 11:04:19 CST 2025","passed","Mon Jul 28 11:04:20 CST 2025","","test_base","",""
