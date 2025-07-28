@@ -6,7 +6,6 @@ from common.attach import readAttach
 from common.read_file import read_yaml
 from playwright.sync_api import Page
 
-
 @allure.epic("基础数据")
 @allure.title("搜索pytest")
 def test_pytest(page: Page):
@@ -18,6 +17,13 @@ def test_pytest(page: Page):
     click_fill(page, "#kw", dbinfo["test_pytest"]["fills"])
     # 点击'百度一下'
     page.get_by_role("button", name="百度一下").click()
+    # 添加 1 秒钟延迟
+    # time.sleep(1)
+    # 等待某个结果元素出现（比如百度搜索结果的某个元素）
+    # page.wait_for_selector("h3")  # 假设百度搜索结果标题是 h3 标签
+    # 等待页面网络空闲（即页面加载完成）
+    page.wait_for_load_state("networkidle")
+
     # 截图结果并保存到log与allure
     readAttach(page, dbinfo["test_pytest"]["path"], dbinfo["test_pytest"]["fileName"])
 
